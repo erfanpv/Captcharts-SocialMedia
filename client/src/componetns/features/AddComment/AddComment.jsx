@@ -13,7 +13,7 @@ const AddComment = ({ postId, onClose }) => {
     e.preventDefault();
     if (comment) {
       try {
-        const response= await axios.post(`http://localhost:8080/api/posts/comment/${postId}`,{replay:comment});
+        const response= await axios.post(`https://captcharts-socialmedia.onrender.com/api/posts/comment/${postId}`,{replay:comment});
         alert(response.data.message ||'comment added successfully');
       } catch (error) {
         alert('error adding comment');

@@ -80,7 +80,7 @@ const AddPost = ({ Oneclose }) => {
   
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/posts",
+        "https://captcharts-socialmedia.onrender.com/api/posts",
         postData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
